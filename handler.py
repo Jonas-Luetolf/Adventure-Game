@@ -1,19 +1,19 @@
-#importieren von json und render
+
 import json
 import render as r
 
 
-#handler Klasse
+
 class handler:
 
-    #Konstruktor
+    
     def __init__(self,path):
 
         #öffnen von json
         with open(path,"r") as f:
             self.data=json.load(f)   
 
-        #erstellen von render instanz
+        
         self.render=r.render()
 
         #erstellen von Variabeln
@@ -23,7 +23,7 @@ class handler:
         self.text_data=""
 
 
-    #print Frame Methode  
+     
     def print_frame(self):
             #Konsole leeren
             self.render.clear()
@@ -41,7 +41,7 @@ class handler:
             
 
 
-    #load_by_keywoard Methode
+    
     def load_by_keyword(self,action):
         
         try:
@@ -76,7 +76,7 @@ class handler:
         
     
 
-    #load_by index Methode
+    
     def load_by_index(self,index):
 
         #setzen der Variabeln

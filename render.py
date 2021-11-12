@@ -1,4 +1,4 @@
-#importieren von time,os und sys
+
 import time
 import os
 import sys
@@ -6,7 +6,7 @@ import sys
 
 class render:
 
-    #Konstruktor
+    
     def __init__(self):
 
         #erstellen von colors dictionaty
@@ -16,7 +16,7 @@ class render:
                         "white":'\033[0m'}
     
     
-    #clear Methode
+    
     def clear(self):
 
         #für Windows
@@ -28,7 +28,7 @@ class render:
              os.system("clear")
            
 
-    #print Methode
+    
     def print(self,text,color="white"):
 
         #zusammensetzen von Text und Farbcodes
@@ -39,14 +39,14 @@ class render:
             #leeren des Buffers
             sys.stdout.flush()
 
-            #printen eines chars
+            
             sys.stdout.write(char)
             
-            #0.015s warten
+            
             time.sleep(0.015)
 
 
-    #input Methode
+    
     def input(self):
         return (input().replace("ö","/oe").replace("ä","/ae").replace("ü","/ue"))
 

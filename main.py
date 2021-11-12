@@ -1,6 +1,4 @@
-#copyright by Jonas Lütolf
 
-#import von handler als h 
 import handler as h
 
 
