@@ -17,10 +17,10 @@ def main():
     
     while True:
 
-        #nextes Frame laden
+       
         ret=frame_handler.load_by_keyword((frame_handler.render.input()).lower())
 
-        #überprüfen ob Ende erreicht ist
+        
         if ret=="END":
             break
 
