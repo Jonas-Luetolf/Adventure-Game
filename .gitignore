@@ -1,0 +1,6 @@
+.swp
+*.swp
+__pycache__/
+.mypy_cache/
+*.out
+*.o
