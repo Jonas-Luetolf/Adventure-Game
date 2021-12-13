@@ -28,6 +28,7 @@ class handler:
     def load_by_keyword(self,action):
         try:
             #laden von neuem frameindex
+            index=self.next_frame_data[action]
             if self.next_frame_data[action] =="END":
                 return index
             #Variabeln neu setzen
