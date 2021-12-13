@@ -114,10 +114,4 @@ Danach wird in einer unendlichschleife das nächste Frame geladen, Das Keyword w
 Das Programm ist so aufgebaut, dass der Code möglichst Wenig widerholungen hat. So habe ich z.B. die Funktion input nur einmal verwendet. Ich habe den Code auch so gestalltet, dass die Json Datei und nicht das Programm vorgibt wie das Game abläuf und bei einem anderen gleich Aufgebauten Spiel nur die Json Datei Verändert werden muss. Das Programm ist im Grunde genommen mit zwei Klassen aufgebaut, so sind die Aufgaben gut von einander getrent sind.
 
 
-## Wie bin ich auf die Idee gekommen und wie habe ich den Code entwickelt?
-
-Ich hatte das Ziel den Code so allgemein wie möglich zu gestallten, so dass er nicht nur für diese Game funktioniert, sonder für alle gleich aufgebauten Games. Der Code sollt auch effizient sein und keine unnötige Variabeln haben.
-Zuerst habe ich mir überlegt wie ich den Code gestallten will. Ich bin schnell auf die Idee gekommen eine Json Datei mit den Frames zu machen. Dann habe ich mir überlegt wie ich den Code gut unterteilen konnte. Die Handler-Klasse habe ich zuerst entwickelt, ich brauche eine Funktion die immer das nächst Frame lädt, später ist mir aufgefallen das ich zum laden des ersten Frames eine andere vogehensweise benötige, daraus ist diese Funktion entstanden. Danach habe ich die Render-Klasse eintwickelt, zuerst konnte sie nur Text anzeigen, später habe ich noch die Animation eingabaut und eine input Methode erstellt, diese ist in diesem Fall eher unnötig da man in der Main Funktion auch einfach die builtin Funktion input aufrufen hätte können, doch wenn man z.B. ein GUI implementiert muss man die Main Funktion nicht verändern. 
-
-Probleme hatte ich eigentlich keine und den Code hatte ich auch schnell entwickelt, aber das einfügen der Texte war mühsam, da mann immer die vielen Klammern, Doppelpunkte und alle doppelten Anführungszeichen durch einfach schreiben oder ersetzen musste.
 
