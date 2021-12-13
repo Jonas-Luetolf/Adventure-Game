@@ -1,7 +1,9 @@
 .swp
 *.swp
 __pycache__/
+backup/
 .mypy_cache/
 *.out
 *.o
 *.ign
+*.bak
